@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div>
+        <div>
+            <h3>Add Item</h3>
+        </div>
+        <div>
+            <button onclick="push()">push</button>
+            <button onclick="unshift()" id="unshift">unshift</button>
+            <button onclick="insert_At()" id="insert_At">insert at</button>
+            <input type="number" name="cantidad" min="0" max="10" step="1">
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>Remove Item</h3>
+        </div>
+        <div>
+            <button onclick="pop()" id="pop">pop</button>
+            <button onclick="shift()" id="shift">shift</button>
+            <button onclick="remove_At()" id="remove_AT">remove at</button>
+            <input type="number" name="cantidad" min="0" max="10" step="1">
+        </div>
+    </div>
+    <div>
+        <p id="resultEmoji"></p>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
