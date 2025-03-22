@@ -1,6 +1,23 @@
 .container{
     display: flex;
     background-color: bisque;
-    align-content: center;
+    align-items: center;
     justify-content: space-evenly;
+    height: 20vh;
+}
+
+.container button{
+    background-color: orange;
+}
+
+.tittle-1{
+    color: darkcyan;
+}
+.tittle-2{
+    color: crimson;
+}
+.output{
+    display: flex;
+    background-color: lightskyblue;
+    justify-content: center;
 }
