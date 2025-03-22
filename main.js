@@ -3,7 +3,6 @@ let array = [];
 let test = 0;
 let arrayEmojis = ["🍔", "🌯", "🍣", "🍕", "🍜", "🍱", "🍙", "🍘", "🥩", "🍻", "🥐"];
 
-
 //-----------------------------------------------------------------------------
 function random(){
     let asd = Math.round(Math.random() * 10);
@@ -33,6 +32,11 @@ function insert_At(element, index){
     updateOutput();
 }
 
+function call_insert_At(){
+    let numInsert = document.getElementById("numInsert").value;
+    insert_At(random(), numInsert);
+}
+
 //--------REMOVE-ITEM--------------------------------------------------------------------
 
 function pop(){
@@ -45,17 +49,14 @@ function shift(){
     updateOutput();
 }
 
-function remove_At(element, index) {
+function remove_At(index) {
     array.splice(index, 1);
     updateOutput();
-  }
+}
 
-//---------------------------------------------------------------------------------------
+function call_remove_At(){
+    let numRemove = document.getElementById("numRemove").value;
+    remove_At(numRemove);
+}
 
-
-/*
-push();
-push();
-unshift();
-insert_At(random(), 1);
-*/
+//--------------------------------END-----------------------------------------------------

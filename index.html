@@ -7,29 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <div>
+    <div class="container">
+    <div class="first-box">    
+        <div class="tittle-1">
             <h3>Add Item</h3>
         </div>
-        <div>
+        <div class="buttons-1">
             <button onclick="push()">push</button>
             <button onclick="unshift()" id="unshift">unshift</button>
-            <button onclick="insert_At()" id="insert_At">insert at</button>
-            <input type="number" name="cantidad" min="0" max="10" step="1">
+            <button onclick="call_insert_At()" id="insert_At">insert at</button>
+            <input type="number" name="cantidad" min="0" max="10" step="1" id="numInsert">
         </div>
     </div>
-    <div>
-        <div>
+    <div class="second-box">
+        <div class="tittle-2">
             <h3>Remove Item</h3>
         </div>
-        <div>
+        <div class="buttons-2">
             <button onclick="pop()" id="pop">pop</button>
             <button onclick="shift()" id="shift">shift</button>
-            <button onclick="remove_At()" id="remove_AT">remove at</button>
-            <input type="number" name="cantidad" min="0" max="10" step="1">
+            <button onclick="call_remove_At()" id="remove_AT">remove at</button>
+            <input type="number" name="cantidad" min="0" max="10" step="1" id="numRemove">
         </div>
     </div>
-    <div>
+    </div>
+    <div class="output">
         <p id="resultEmoji"></p>
     </div>
     <script src="main.js"></script>
